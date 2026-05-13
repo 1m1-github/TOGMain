@@ -1,10 +1,11 @@
 name = "TOGMain"
 uuid = "d9ed2a47-5efd-4969-8b6d-00e46e0236e9"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["1m1 <imi@1m1.io>"]
 
 [deps]
 TOGREPL = "af1d9ce1-dab3-4208-a785-3251d27ca748"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 TOGZMQServer = "839ba1f0-d901-4918-867d-993cc344f7e1"
 TOGgod = "140036e9-dd95-4f86-9a5a-99809899a699"
 LoopOS = "59e1c01a-66d3-4f31-a2af-c2f41340710f"
