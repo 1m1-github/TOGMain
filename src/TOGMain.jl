@@ -27,6 +27,16 @@ function parse_commandline()
     return parse_args(s)
 end
 function (@main)(ARGS)
+    # Pkg.update()
+    # manifest = joinpath(dirname(Pkg.project().path), "Manifest.toml")
+    # prehash = hash(read(manifest))
+    # Pkg.update()
+    # posthash = hash(read(manifest))
+    # updated = prehash != posthash
+    # if updated
+    #     run(`tog `)
+    #     exit(0)
+    # end
     # DEPOT_PATH[1]=joinpath(pwd(),".loopos")
     config = parse_commandline()
     config["update"] && return Pkg.update()
