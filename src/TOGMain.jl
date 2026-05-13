@@ -4,7 +4,7 @@ const T = Float32
 export T
 
 using Revise, ArgParse, Pkg
-using LoopOS: 𝕋, t
+using TOG: 𝕋, t
 using TOGZMQServer, TOGgod, TOGREPL
 
 const Ω = 𝕋()
