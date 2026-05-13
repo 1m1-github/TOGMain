@@ -1,14 +1,16 @@
 name = "TOGMain"
 uuid = "d9ed2a47-5efd-4969-8b6d-00e46e0236e9"
-version = "9.0.0"
+version = "10.0.0"
 authors = ["1m1 <imi@1m1.io>"]
 
 [deps]
-TOGREPL = "af1d9ce1-dab3-4208-a785-3251d27ca748"
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-TOGZMQServer = "839ba1f0-d901-4918-867d-993cc344f7e1"
-TOGgod = "140036e9-dd95-4f86-9a5a-99809899a699"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 TOG = "c9101ee6-f480-4f04-b2e3-e4d672b7c53b"
 TOGCommunicationServer = "57b7b16f-cff4-4f2b-ba07-0f472443368a"
-ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
+TOGREPL = "af1d9ce1-dab3-4208-a785-3251d27ca748"
+TOGZMQServer = "839ba1f0-d901-4918-867d-993cc344f7e1"
+TOGgod = "140036e9-dd95-4f86-9a5a-99809899a699"
+
+[apps.tog]
