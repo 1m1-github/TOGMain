@@ -1,6 +1,6 @@
 name = "TOGMain"
 uuid = "d9ed2a47-5efd-4969-8b6d-00e46e0236e9"
-version = "5.0.0"
+version = "6.0.0"
 authors = ["1m1 <imi@1m1.io>"]
 
 [deps]

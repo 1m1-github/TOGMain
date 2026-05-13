@@ -5,7 +5,7 @@ export T
 
 using Revise, ArgParse, Pkg
 using TOG: 𝕋, t
-using TOGZMQServer, TOGgod, TOGREPL
+using TOGZMQServer, TOGgod, TOGREPL, TOGCommunicationServer
 
 const Ω = 𝕋()
 
@@ -30,10 +30,10 @@ function (@main)(ARGS)
     # DEPOT_PATH[1]=joinpath(pwd(),".loopos")
     config = parse_commandline()
     config["update"] && return Pkg.update()
-    TOGZMQServer.start(TOGLOCATION, Ω)
-    # TOGStringZMQServer.start(ROUTERLOCATION, PUBLOCATION) # TODO
+    TOGZMQServer.awaken(TOGLOCATION, Ω)
+    TOGCommunicationServer.awaken(router=ROUTERLOCATION, pub=PUBLOCATION)
     [TOGgod.awaken(group="∀", name=name, router=ROUTERLOCATION, pub=PUBLOCATION, tog=TOGLOCATION) for name = config["names"]]
-    TOGREPL.start(false)
+    TOGREPL.awaken(false)
     0
 end
 
