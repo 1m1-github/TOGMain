@@ -21,8 +21,8 @@ function parse_commandline()
         "names"
         nargs = '*'
         arg_type = String
-        # default = ["TOGHuman", "TOGDona", "TOGJanet"]
-        default = ["TOGHuman"]
+        # default = ["i", "Dona", "Janet"]
+        default = ["i"]
     end
     return parse_args(s)
 end
